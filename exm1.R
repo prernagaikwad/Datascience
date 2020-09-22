@@ -45,3 +45,37 @@ v3 == c(3,1,FALSE)
 c(3,1,TRUE,2+3i) -> v4
 c(3,1,TRUE,2+3i) ->> v5
 c(4,4,FALSE) ->> v6
+#vector
+v <- c(1,6,8,7)
+v
+#matrix()
+a<- matrix(c(1,2,3,4),nrow=2,byrow=T)
+a
+a=matrix(c(1,2,3,4),nrow=1)
+a
+a=matrix(c(1,2,3,4),ncol=2)
+a
+x<-matrix(c(1:5),nrow=5,ncol=5,dimnames = list(c('r1','r2','r3','r4','r5') ,c('c1','c2','c3','c4','c5')))
+x
+#array
+arr<-array(c(1:6),dim = c(2,4,3))
+arr
+arr[,,1]
+arr[1,2,3]
+#list
+List<-list(Id=c(1,2,3,4),name=c('D','k','L','S'),marks=c(9,9.5,8,8.5))
+List
+List$marks
+List$Id
+#Dataframe
+DF2<-data.frame(Id=c(5,6,7,8),name=c('A','T','V','p'),marks=c(7,9.5,8.5,5.6))
+DF2
+CE<-data.frame(x=c(1,2,3),y=c('a','b','c'))
+CE
+CE[1,1]
+CE[1,2]
+CE[2,6]
+CE[1,3]
+CE[,2]
+CE[1,,3]
+CE[2,,6]
